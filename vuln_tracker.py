@@ -1,6 +1,6 @@
-import platform
 import subprocess
 import json
+import platform
 import datetime
 
 def get_system_info():
@@ -33,6 +33,15 @@ def get_cpu_info():
         print(f"Error retrieving CPU information: {e}")
         return {}
 
+def parse_attack_output(attack_output):
+    lines = attack_output.split('\n')
+    parsed_output = []
+
+    for line in lines:
+        parsed_output.append({'Line': line})
+
+    return parsed_output
+
 def get_memory_info():
     try:
         memory_info = {}
@@ -48,6 +57,17 @@ def get_memory_info():
         print(f"Error retrieving memory information: {e}")
         return {}
 
+def run_attack_program():
+    try:
+        command = ['gcc', 'spectre.c', '-o', 'meltdown_test']
+        subprocess.run(command, check=True)
+        result = subprocess.run(['./meltdown_test'], capture_output=True, check=True)
+        return result.stdout.decode('utf-8')  # Decode bytes to string
+    except subprocess.CalledProcessError as e:
+        print(f"Error running the attack program: {e}")
+        print(f"Command stderr: {e.stderr}")
+        return None
+
 def run_shell_script():
     try:
         # Run the shell script with the specified command
@@ -57,12 +77,7 @@ def run_shell_script():
     except subprocess.CalledProcessError as e:
         print(f"Error running the shell script: {e}")
         print(f"Command stderr: {e.stderr}")
-        error_data = {
-            "Error": "Failed to run the shell script",
-            "Error Message": str(e),
-            "Timestamp": datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-        }
-        return json.dumps(error_data)
+        return None
 
 def process_shell_output(shell_output):
     if shell_output is None:
@@ -76,14 +91,14 @@ def process_shell_output(shell_output):
         print(f"Error decoding JSON: {e}")
         return None
 
-def save_to_file(data, filename):
-    with open(filename, "w") as file:
-        json.dump(data, file, indent=4)
-    print(f"Data saved to {filename}")
+def export_to_readable_json(data, output_filename='output.json'):
+    if data is not None:
+        # Convert the data to a readable JSON format
+        with open(output_filename, 'w') as json_file:
+            json.dump(data, json_file, indent=2)
 
 def main():
     print("Gathering System Information...")
-
     system_info = get_system_info()
     cpu_info = get_cpu_info()
     memory_info = get_memory_info()
@@ -93,20 +108,21 @@ def main():
     # Add a timestamp to the data
     system_info["Timestamp"] = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
-    # Save system information to a file
-    save_to_file(system_info, "system_info.json")
+    attack_output = run_attack_program()
 
-    # Run the shell script
-    shell_output = run_shell_script()
-
-    # Process the shell script output
-    vulnerabilities_data = process_shell_output(shell_output)
-
-    # Merge system information and vulnerabilities data
-    merged_data = {"System Information": system_info, "Vulnerabilities Data": vulnerabilities_data}
-
-    # Save merged data to a file
-    save_to_file(merged_data, "merged_output.json")
+    # Save all data to a single JSON file
+    filename = "output_data.json"
+    with open(filename, "w") as file:
+        json.dump(
+            {
+                "System Information": system_info,
+                "Attack Output": parse_attack_output(attack_output),
+                "Vulnerabilities Data": process_shell_output(run_shell_script())
+            },
+            file,
+            indent=4
+        )
+    print(f"Data saved to {filename}")
 
 if __name__ == "__main__":
     main()
