@@ -54,6 +54,3 @@ This project is for informational purposes only. It does not guarantee absolute 
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
-
-
-Please replace `"your-username"` with your GitHub username. Additionally, consider adding a license file (`LICENSE.md`) with the appropriate license for your project. The template above uses the MIT License as an example.
