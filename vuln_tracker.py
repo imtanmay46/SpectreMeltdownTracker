@@ -116,7 +116,11 @@ def main():
         attack_output = run_attack_program()
 
         # Save all data to a single JSON file
-        filename = "output_data.json"
+        # filename = "output_data.json"
+        current_timestamp = datetime.datetime.now().strftime("%Y-%m-%d_%H%M%S")
+        filename = f"{current_timestamp}.json"
+
+
         with open(filename, "w") as file:
             json.dump(
                 {
