@@ -4,19 +4,23 @@ import platform
 import datetime
 
 def get_system_info():
-    system_info = {
-        'OS': platform.system(),
-        'OS Version': platform.version(),
-        'OS Release': platform.release(),
-        'Architecture': platform.architecture(),
-        'Machine': platform.machine(),
-        'Processor': platform.processor(),
-        'Python Version': platform.python_version(),
-        'GCC Version': subprocess.getoutput('gcc --version | head -n 1').strip(),
-        'LD Version': subprocess.getoutput('ld --version | head -n 1').strip(),
-        'Timestamp': datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-    }
-    return system_info
+    try:
+        system_info = {
+            'OS': platform.system(),
+            'OS Version': platform.version(),
+            'OS Release': platform.release(),
+            'Architecture': platform.architecture(),
+            'Machine': platform.machine(),
+            'Processor': platform.processor(),
+            'Python Version': platform.python_version(),
+            'GCC Version': subprocess.getoutput('gcc --version | head -n 1').strip(),
+            'LD Version': subprocess.getoutput('ld --version | head -n 1').strip(),
+            'Timestamp': datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        }
+        return system_info
+    except Exception as e:
+        print(f"Error retrieving system information: {e}")
+        return {}
 
 def get_cpu_info():
     try:
@@ -98,31 +102,36 @@ def export_to_readable_json(data, output_filename='output.json'):
             json.dump(data, json_file, indent=2)
 
 def main():
-    print("Gathering System Information...")
-    system_info = get_system_info()
-    cpu_info = get_cpu_info()
-    memory_info = get_memory_info()
+    try:
+        print("Gathering System Information...")
+        system_info = get_system_info()
+        cpu_info = get_cpu_info()
+        memory_info = get_memory_info()
 
-    system_info.update({"CPU Information": cpu_info, "Memory Information": memory_info})
+        system_info.update({"CPU Information": cpu_info, "Memory Information": memory_info})
 
-    # Add a timestamp to the data
-    system_info["Timestamp"] = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        # Add a timestamp to the data
+        system_info["Timestamp"] = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
-    attack_output = run_attack_program()
+        attack_output = run_attack_program()
 
-    # Save all data to a single JSON file
-    filename = "output_data.json"
-    with open(filename, "w") as file:
-        json.dump(
-            {
-                "System Information": system_info,
-                "Attack Output": parse_attack_output(attack_output),
-                "Vulnerabilities Data": process_shell_output(run_shell_script())
-            },
-            file,
-            indent=4
-        )
-    print(f"Data saved to {filename}")
+        # Save all data to a single JSON file
+        filename = "output_data.json"
+        with open(filename, "w") as file:
+            json.dump(
+                {
+                    "System Information": system_info,
+                    "Manufacturer Vulnerabilities Data": process_shell_output(run_shell_script()),
+                    "Attack Output": parse_attack_output(attack_output)
+                    
+                },
+                file,
+                indent=4
+            )
+        print(f"Data saved to {filename}")
+
+    except Exception as e:
+        print(f"An unexpected error occurred: {e}")
 
 if __name__ == "__main__":
     main()
