@@ -25,18 +25,14 @@ We provide a script (`vuln_tracker.py`) that gathers information about the vulne
 
 1. **Clone the Repository:**
    ```bash
-   git clone https://github.com/your-username/vulnerability-tracker.git
-   cd vulnerability-tracker
+   git clone https://github.com/arnavgupta2003/SpectreMeltdownTracker.git
+   cd SpectreMeltdownTracker
    ```
 
 2. **Run the Script:**
-   Execute the script to gather information about your system.
+   Execute the script to gather information about your system. (Just need to run Make)
    ```bash
-   python vuln_tracker.py
-   ```
-    OR
-   ```bash
-   python3 vuln_tracker.py
+   make
    ```
 
 4. **Contribute:**
@@ -67,14 +63,16 @@ This package is designed to run on Linux and requires the following dependencies
 - `ld`: The GNU linker
 - `binutils`: A collection of binary tools
 - `sh`: The Bourne Shell (used for running scripts in the terminal)
+- `make`: Make is a build automation tool that streamlines software project compilation using a Makefile to define and execute tasks.
 
 
 ## Installation
 
-There are no additional dependencies beyond Python's standard library.
-Linux
-GCC
-LD
+There are no additional dependencies beyond Python's standard library. Except for:
+- Linux System
+- GCC
+- LD
+- Make
 
 ## Installation (Advanced)
 For users with custom Linux environments, you may need to manually install additional dependencies. Make sure you have gcc, ld, binutils, and sh available in your system.
