@@ -13,8 +13,10 @@ Welcome to the Spectre/Meltdown Vulnerability Tracker repository! This project a
 - [Getting Started](#getting-started)
 - [Contributions](#contributions)
 - [Contribution Guidelines](#contribution-guidelines)
+- [Dependencies](#dependencies) 
 - [Installation](#installation)
 - [Disclaimer](#disclaimer)
+- [Credits](#credits)
 - [License](#license)
 
 ## How it Works
@@ -47,6 +49,8 @@ We welcome contributions from the community to improve the accuracy and coverage
 3. Run the script on your system and follow the instructions to generate a report.
 4. Commit the generated report to your forked repository.
 5. Create a pull request with a descriptive title and details about the changes.
+
+Also consult [CONTRIBUTING.md](https://github.com/arnavgupta2003/SpectreMeltdownTracker/blob/main/CONTRIBUTING.md)
 
 ## Contribution Guidelines
 
