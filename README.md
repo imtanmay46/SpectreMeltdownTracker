@@ -59,6 +59,16 @@ We welcome contributions from the community to improve the accuracy and coverage
 
 Thank you for contributing to the security awareness and improvement of our vulnerability tracker!
 
+## Dependencies
+
+This package is designed to run on Linux and requires the following dependencies:
+
+- `gcc`: GNU Compiler Collection
+- `ld`: The GNU linker
+- `binutils`: A collection of binary tools
+- `sh`: The Bourne Shell (used for running scripts in the terminal)
+
+
 ## Installation
 
 There are no additional dependencies beyond Python's standard library.
@@ -66,9 +76,18 @@ Linux
 GCC
 LD
 
+## Installation (Advanced)
+For users with custom Linux environments, you may need to manually install additional dependencies. Make sure you have gcc, ld, binutils, and sh available in your system.
+
 ## Disclaimer
 
 This project is for informational purposes only. It does not guarantee absolute accuracy and should not be considered a substitute for professional security assessments. Use the information at your own risk.
+
+## Credits
+
+This project includes the use of the Intel manufacture checker script. We want to express our gratitude to the authors and contributors of the Intel manufacture checker script for their valuable work in enhancing system security.
+[Link](https://www.intel.com/content/www/us/en/developer/articles/technical/software-security-guidance/secure-coding/spectre-and-meltdown-checker-script.html#:~:text=The%20Spectre%20and%20Meltdown%20Checker,and%20rogue%20system%20register%20read)
+
 
 ## License
 
