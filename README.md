@@ -1,10 +1,21 @@
 # SpectreMeltdownTracker
-SpectreMeltdownTracker: Centralized database monitoring system vulnerabilities to Spectre and Meltdown attacks. Contribute to enhance security awareness. 🛡️
+[![Build Status](https://travis-ci.org/your-username/vulnerability-tracker.svg?branch=master)](https://travis-ci.org/your-username/vulnerability-tracker)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE.md)
 
+Centralized database monitoring system vulnerabilities to Spectre and Meltdown attacks. Contribute to enhance security awareness. 🛡️
 
-# Vulnerability Tracker
+## Vulnerability Tracker
 
 Welcome to the Spectre/Meltdown Vulnerability Tracker repository! This project aims to create a central database to track the vulnerability status of systems regarding Spectre and Meltdown attacks. By collecting information on which systems are still vulnerable, we can raise awareness and facilitate the implementation of necessary security measures.
+
+## Table of Contents
+- [How it Works](#how-it-works)
+- [Getting Started](#getting-started)
+- [Contributions](#contributions)
+- [Contribution Guidelines](#contribution-guidelines)
+- [Installation](#installation)
+- [Disclaimer](#disclaimer)
+- [License](#license)
 
 ## How it Works
 
@@ -23,8 +34,12 @@ We provide a script (`vuln_tracker.py`) that gathers information about the vulne
    ```bash
    python vuln_tracker.py
    ```
+    OR
+   ```bash
+   python3 vuln_tracker.py
+   ```
 
-3. **Contribute:**
+4. **Contribute:**
    After running the script, follow the instructions to contribute the collected data to this repository. Create a pull request with the generated report.
 
 ## Contributions
@@ -32,20 +47,24 @@ We provide a script (`vuln_tracker.py`) that gathers information about the vulne
 We welcome contributions from the community to improve the accuracy and coverage of our vulnerability database. To contribute:
 
 1. Fork the repository.
-
-2. Clone your forked repository:
-   ```bash
-   git clone https://github.com/your-username/vulnerability-tracker.git
-   cd vulnerability-tracker
-   ```
-
+2. Clone your forked repository.
 3. Run the script on your system and follow the instructions to generate a report.
-
 4. Commit the generated report to your forked repository.
-
 5. Create a pull request with a descriptive title and details about the changes.
 
+## Contribution Guidelines
+
+- Include information about how to run tests and check code coverage.
+- Specify any coding standards or conventions contributors should follow.
+
 Thank you for contributing to the security awareness and improvement of our vulnerability tracker!
+
+## Installation
+
+There are no additional dependencies beyond Python's standard library.
+Linux
+GCC
+LD
 
 ## Disclaimer
 
