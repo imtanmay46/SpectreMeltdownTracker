@@ -186,9 +186,6 @@
         },
         {
             "Line": "Reading at malicious_x = 0xffffffffffffdfef... Success: 0x2E='.' score=2    "
-        },
-        {
-            "Line": ""
         }
     ]
 }
