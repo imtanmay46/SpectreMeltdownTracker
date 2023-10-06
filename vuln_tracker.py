@@ -2,6 +2,7 @@ import subprocess
 import json
 import platform
 import datetime
+import logging
 
 def get_system_info():
     try:
@@ -19,7 +20,7 @@ def get_system_info():
         }
         return system_info
     except Exception as e:
-        print(f"Error retrieving system information: {e}")
+        logging.error(f"Error retrieving system information: {e}")
         return {}
 
 def get_cpu_info():
@@ -34,7 +35,7 @@ def get_cpu_info():
                 cpu_info[key] = value
         return cpu_info
     except Exception as e:
-        print(f"Error retrieving CPU information: {e}")
+        logging.error(f"Error retrieving CPU information: {e}")
         return {}
 
 def parse_attack_output(attack_output):
@@ -58,7 +59,7 @@ def get_memory_info():
             memory_info[key] = value
         return memory_info
     except Exception as e:
-        print(f"Error retrieving memory information: {e}")
+        logging.error(f"Error retrieving memory information: {e}")
         return {}
 
 def run_attack_program():
@@ -68,8 +69,8 @@ def run_attack_program():
         result = subprocess.run(['./lib/meltdown_test'], capture_output=True, check=True)
         return result.stdout.decode('utf-8')  # Decode bytes to string
     except subprocess.CalledProcessError as e:
-        print(f"Error running the attack program: {e}")
-        print(f"Command stderr: {e.stderr}")
+        logging.error(f"Error running the attack program: {e}")
+        logging.error(f"Command stderr: {e.stderr}")
         return None
 
 def run_shell_script():
@@ -79,8 +80,8 @@ def run_shell_script():
         result = subprocess.run(command, shell=True, capture_output=True, text=True, check=True)
         return result.stdout
     except subprocess.CalledProcessError as e:
-        print(f"Error running the shell script: {e}")
-        print(f"Command stderr: {e.stderr}")
+        logging.error(f"Error running the shell script: {e}")
+        logging.error(f"Command stderr: {e.stderr}")
         return None
 
 def process_shell_output(shell_output):
@@ -92,7 +93,7 @@ def process_shell_output(shell_output):
         data = json.loads(shell_output)
         return data
     except json.JSONDecodeError as e:
-        print(f"Error decoding JSON: {e}")
+        logging.error(f"Error decoding JSON: {e}")
         return None
 
 def export_to_readable_json(data, output_filename='output.json'):
@@ -101,7 +102,16 @@ def export_to_readable_json(data, output_filename='output.json'):
         with open(output_filename, 'w') as json_file:
             json.dump(data, json_file, indent=2)
 
+def logs():
+	logging.basicConfig(filename='log.log',
+		level = logging.INFO,
+		format = '%(asctime)s [%(levelname)s: %(message)s]',
+		datefmt= '%Y-%m-%d %H:%M:%S')
+
+	
+
 def main():
+    logs()
     try:
         print("Gathering System Information...")
         system_info = get_system_info()
@@ -135,7 +145,7 @@ def main():
         print(f"Data saved to {filename}")
 
     except Exception as e:
-        print(f"An unexpected error occurred: {e}")
+        logging.error(f"An unexpected error occurred: {e}")
 
 if __name__ == "__main__":
     main()
