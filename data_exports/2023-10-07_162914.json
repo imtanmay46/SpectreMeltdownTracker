@@ -1,0 +1,239 @@
+{
+    "System Information": {
+        "OS": "FreeBSD",
+        "OS Version": "FreeBSD 13.2-RELEASE releng/13.2-n254617-525ecfdad597 GENERIC",
+        "OS Release": "13.2-RELEASE",
+        "Architecture": [
+            "64bit",
+            "ELF"
+        ],
+        "Machine": "amd64",
+        "Processor": "amd64",
+        "Python Version": "3.9.17",
+        "GCC Version": "gcc (FreeBSD Ports Collection) 12.2.0",
+        "LD Version": "LLD 14.0.5 (FreeBSD llvmorg-14.0.5-0-gc12386ae247c-1400004) (compatible with GNU linkers)",
+        "Timestamp": "2023-10-07 16:29:13",
+        "CPU Information": {},
+        "Memory Information": {}
+    },
+    "Manufacturer Vulnerabilities Data": [
+        {
+            "NAME": "SPECTRE VARIANT 1",
+            "CVE": "CVE-2017-5753",
+            "VULNERABLE": true,
+            "INFOS": "no mitigation for BSD yet"
+        },
+        {
+            "NAME": "SPECTRE VARIANT 2",
+            "CVE": "CVE-2017-5715",
+            "VULNERABLE": true,
+            "INFOS": "IBRS is supported but administratively disabled on your system"
+        },
+        {
+            "NAME": "MELTDOWN",
+            "CVE": "CVE-2017-5754",
+            "VULNERABLE": false,
+            "INFOS": "PTI mitigates the vulnerability"
+        },
+        {
+            "NAME": "VARIANT 3A",
+            "CVE": "CVE-2018-3640",
+            "VULNERABLE": true,
+            "INFOS": "an up-to-date CPU microcode is needed to mitigate this vulnerability"
+        },
+        {
+            "NAME": "VARIANT 4",
+            "CVE": "CVE-2018-3639",
+            "VULNERABLE": true,
+            "INFOS": "Your CPU doesn't support SSBD"
+        },
+        {
+            "NAME": "L1TF SGX",
+            "CVE": "CVE-2018-3615",
+            "VULNERABLE": true,
+            "INFOS": "your CPU supports SGX and the microcode is not up to date"
+        },
+        {
+            "NAME": "L1TF OS",
+            "CVE": "CVE-2018-3620",
+            "VULNERABLE": false,
+            "INFOS": "kernel mitigates the vulnerability"
+        },
+        {
+            "NAME": "L1TF VMM",
+            "CVE": "CVE-2018-3646",
+            "VULNERABLE": false,
+            "INFOS": "L1D flushing mitigates the vulnerability"
+        },
+        {
+            "NAME": "MSBDS",
+            "CVE": "CVE-2018-12126",
+            "VULNERABLE": true,
+            "INFOS": "Your kernel supports mitigation, but your CPU microcode also needs to be updated to mitigate the vulnerability"
+        },
+        {
+            "NAME": "MFBDS",
+            "CVE": "CVE-2018-12130",
+            "VULNERABLE": true,
+            "INFOS": "Your kernel supports mitigation, but your CPU microcode also needs to be updated to mitigate the vulnerability"
+        },
+        {
+            "NAME": "MLPDS",
+            "CVE": "CVE-2018-12127",
+            "VULNERABLE": true,
+            "INFOS": "Your kernel supports mitigation, but your CPU microcode also needs to be updated to mitigate the vulnerability"
+        },
+        {
+            "NAME": "MDSUM",
+            "CVE": "CVE-2019-11091",
+            "VULNERABLE": true,
+            "INFOS": "Your kernel supports mitigation, but your CPU microcode also needs to be updated to mitigate the vulnerability"
+        },
+        {
+            "NAME": "TAA",
+            "CVE": "CVE-2019-11135",
+            "VULNERABLE": false,
+            "INFOS": "your CPU vendor reported your CPU model as not affected"
+        },
+        {
+            "NAME": "ITLBMH",
+            "CVE": "CVE-2018-12207",
+            "VULNERABLE": true,
+            "INFOS": "Your kernel supports mitigating this CVE, but the mitigation is disabled"
+        },
+        {
+            "NAME": "SRBDS",
+            "CVE": "CVE-2020-0543",
+            "VULNERABLE": null,
+            "INFOS": "your CPU is affected, but mitigation detection has not yet been implemented for BSD in this script"
+        }
+    ],
+    "Attack Output": [
+        {
+            "Line": "Reading 40 bytes:"
+        },
+        {
+            "Line": "Reading at malicious_x = 0xffffffffffffec20... Success: 0x54='T' score=7    (second best: 0x01 score=1)"
+        },
+        {
+            "Line": "Reading at malicious_x = 0xffffffffffffec21... Success: 0x68='h' score=2    "
+        },
+        {
+            "Line": "Reading at malicious_x = 0xffffffffffffec22... Success: 0x65='e' score=2    "
+        },
+        {
+            "Line": "Reading at malicious_x = 0xffffffffffffec23... Success: 0x20=' ' score=2    "
+        },
+        {
+            "Line": "Reading at malicious_x = 0xffffffffffffec24... Success: 0x4D='M' score=2    "
+        },
+        {
+            "Line": "Reading at malicious_x = 0xffffffffffffec25... Success: 0x61='a' score=2    "
+        },
+        {
+            "Line": "Reading at malicious_x = 0xffffffffffffec26... Success: 0x67='g' score=2    "
+        },
+        {
+            "Line": "Reading at malicious_x = 0xffffffffffffec27... Success: 0x69='i' score=2    "
+        },
+        {
+            "Line": "Reading at malicious_x = 0xffffffffffffec28... Success: 0x63='c' score=2    "
+        },
+        {
+            "Line": "Reading at malicious_x = 0xffffffffffffec29... Success: 0x20=' ' score=2    "
+        },
+        {
+            "Line": "Reading at malicious_x = 0xffffffffffffec2a... Success: 0x57='W' score=2    "
+        },
+        {
+            "Line": "Reading at malicious_x = 0xffffffffffffec2b... Success: 0x6F='o' score=2    "
+        },
+        {
+            "Line": "Reading at malicious_x = 0xffffffffffffec2c... Success: 0x72='r' score=2    "
+        },
+        {
+            "Line": "Reading at malicious_x = 0xffffffffffffec2d... Success: 0x64='d' score=2    "
+        },
+        {
+            "Line": "Reading at malicious_x = 0xffffffffffffec2e... Success: 0x73='s' score=2    "
+        },
+        {
+            "Line": "Reading at malicious_x = 0xffffffffffffec2f... Success: 0x20=' ' score=2    "
+        },
+        {
+            "Line": "Reading at malicious_x = 0xffffffffffffec30... Success: 0x61='a' score=2    "
+        },
+        {
+            "Line": "Reading at malicious_x = 0xffffffffffffec31... Success: 0x72='r' score=2    "
+        },
+        {
+            "Line": "Reading at malicious_x = 0xffffffffffffec32... Success: 0x65='e' score=2    "
+        },
+        {
+            "Line": "Reading at malicious_x = 0xffffffffffffec33... Success: 0x20=' ' score=2    "
+        },
+        {
+            "Line": "Reading at malicious_x = 0xffffffffffffec34... Success: 0x53='S' score=2    "
+        },
+        {
+            "Line": "Reading at malicious_x = 0xffffffffffffec35... Success: 0x71='q' score=2    "
+        },
+        {
+            "Line": "Reading at malicious_x = 0xffffffffffffec36... Success: 0x75='u' score=2    "
+        },
+        {
+            "Line": "Reading at malicious_x = 0xffffffffffffec37... Success: 0x65='e' score=2    "
+        },
+        {
+            "Line": "Reading at malicious_x = 0xffffffffffffec38... Success: 0x61='a' score=2    "
+        },
+        {
+            "Line": "Reading at malicious_x = 0xffffffffffffec39... Success: 0x6D='m' score=2    "
+        },
+        {
+            "Line": "Reading at malicious_x = 0xffffffffffffec3a... Success: 0x69='i' score=2    "
+        },
+        {
+            "Line": "Reading at malicious_x = 0xffffffffffffec3b... Success: 0x73='s' score=2    "
+        },
+        {
+            "Line": "Reading at malicious_x = 0xffffffffffffec3c... Success: 0x68='h' score=2    "
+        },
+        {
+            "Line": "Reading at malicious_x = 0xffffffffffffec3d... Success: 0x20=' ' score=2    "
+        },
+        {
+            "Line": "Reading at malicious_x = 0xffffffffffffec3e... Success: 0x4F='O' score=2    "
+        },
+        {
+            "Line": "Reading at malicious_x = 0xffffffffffffec3f... Success: 0x73='s' score=2    "
+        },
+        {
+            "Line": "Reading at malicious_x = 0xffffffffffffec40... Success: 0x73='s' score=2    "
+        },
+        {
+            "Line": "Reading at malicious_x = 0xffffffffffffec41... Success: 0x69='i' score=2    "
+        },
+        {
+            "Line": "Reading at malicious_x = 0xffffffffffffec42... Success: 0x66='f' score=2    "
+        },
+        {
+            "Line": "Reading at malicious_x = 0xffffffffffffec43... Success: 0x72='r' score=2    "
+        },
+        {
+            "Line": "Reading at malicious_x = 0xffffffffffffec44... Success: 0x61='a' score=2    "
+        },
+        {
+            "Line": "Reading at malicious_x = 0xffffffffffffec45... Success: 0x67='g' score=2    "
+        },
+        {
+            "Line": "Reading at malicious_x = 0xffffffffffffec46... Success: 0x65='e' score=2    "
+        },
+        {
+            "Line": "Reading at malicious_x = 0xffffffffffffec47... Success: 0x2E='.' score=2    "
+        },
+        {
+            "Line": ""
+        }
+    ]
+}
