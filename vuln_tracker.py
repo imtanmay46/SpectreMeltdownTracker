@@ -82,7 +82,7 @@ def run_shell_script():
     except subprocess.CalledProcessError as e:
         logging.error(f"Error running the shell script: {e}")
         logging.error(f"Command stderr: {e.stderr}")
-        return None
+        return result.stdout
 
 def process_shell_output(shell_output):
     if shell_output is None:
