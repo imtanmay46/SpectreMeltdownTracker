@@ -77,12 +77,12 @@ def run_shell_script():
     try:
         # Run the shell script with the specified command
         command = 'sudo ./lib/spectre-meltdown-checker.sh -v --live --verbose --explain --arch-prefix PREFIX --batch json'
-        result = subprocess.run(command, shell=True, capture_output=True, text=True, check=True)
+        result = subprocess.run(command, shell=True, capture_output=True, text=True, check=False)
         return result.stdout
     except subprocess.CalledProcessError as e:
         logging.error(f"Error running the shell script: {e}")
         logging.error(f"Command stderr: {e.stderr}")
-        return result.stdout
+        return null
 
 def process_shell_output(shell_output):
     if shell_output is None:
