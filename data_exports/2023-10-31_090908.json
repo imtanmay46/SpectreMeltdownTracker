@@ -1,0 +1,304 @@
+{
+    "System Information": {
+        "OS": "Linux",
+        "OS Version": "#15~22.04.1-Ubuntu SMP Fri Oct  6 13:20:44 UTC 2023",
+        "OS Release": "6.2.0-1015-azure",
+        "Architecture": [
+            "64bit",
+            "ELF"
+        ],
+        "Machine": "x86_64",
+        "Processor": "x86_64",
+        "Python Version": "3.10.8",
+        "GCC Version": "gcc (Ubuntu 9.4.0-1ubuntu1~20.04.2) 9.4.0",
+        "LD Version": "GNU ld (GNU Binutils for Ubuntu) 2.34",
+        "Timestamp": "2023-10-31 09:09:05",
+        "CPU Information": {
+            "Architecture": "x86_64",
+            "CPU op-mode(s)": "32-bit, 64-bit",
+            "Byte Order": "Little Endian",
+            "Address sizes": "48 bits physical, 48 bits virtual",
+            "CPU(s)": "2",
+            "On-line CPU(s) list": "0,1",
+            "Thread(s) per core": "2",
+            "Core(s) per socket": "1",
+            "Socket(s)": "1",
+            "NUMA node(s)": "1",
+            "Vendor ID": "AuthenticAMD",
+            "CPU family": "25",
+            "Model": "1",
+            "Model name": "AMD EPYC 7763 64-Core Processor",
+            "Stepping": "1",
+            "CPU MHz": "3190.860",
+            "BogoMIPS": "4890.86",
+            "Virtualization": "AMD-V",
+            "Hypervisor vendor": "Microsoft",
+            "Virtualization type": "full",
+            "L1d cache": "32 KiB",
+            "L1i cache": "32 KiB",
+            "L2 cache": "512 KiB",
+            "L3 cache": "32 MiB",
+            "NUMA node0 CPU(s)": "0,1",
+            "Vulnerability Gather data sampling": "Not affected",
+            "Vulnerability Itlb multihit": "Not affected",
+            "Vulnerability L1tf": "Not affected",
+            "Vulnerability Mds": "Not affected",
+            "Vulnerability Meltdown": "Not affected",
+            "Vulnerability Mmio stale data": "Not affected",
+            "Vulnerability Retbleed": "Not affected",
+            "Vulnerability Spec rstack overflow": "Mitigation; safe RET, no microcode",
+            "Vulnerability Spec store bypass": "Vulnerable",
+            "Vulnerability Spectre v1": "Mitigation; usercopy/swapgs barriers and __user pointer sanitization",
+            "Vulnerability Spectre v2": "Mitigation; Retpolines, STIBP disabled, RSB filling, PBRSB-eIBRS Not affected",
+            "Vulnerability Srbds": "Not affected",
+            "Vulnerability Tsx async abort": "Not affected",
+            "Flags": "fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc rep_good nopl tsc_reliable nonstop_tsc cpuid extd_apicid aperfmperf pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm cmp_legacy svm cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw topoext invpcid_single vmmcall fsgsbase bmi1 avx2 smep bmi2 erms invpcid rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 xsaves clzero xsaveerptr rdpru arat npt nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold v_vmsave_vmload umip vaes vpclmulqdq rdpid fsrm"
+        },
+        "Memory Information": {
+            "total": "Mem:",
+            "used": "7.7Gi",
+            "free": "1.5Gi",
+            "shared": "132Mi",
+            "buff/cache": "4.0Mi",
+            "available": "6.1Gi"
+        }
+    },
+    "Manufacturer Vulnerabilities Data": [
+        {
+            "NAME": "SPECTRE VARIANT 1",
+            "CVE": "CVE-2017-5753",
+            "VULNERABLE": false,
+            "INFOS": "Mitigation: usercopy/swapgs barriers and __user pointer sanitization"
+        },
+        {
+            "NAME": "SPECTRE VARIANT 2",
+            "CVE": "CVE-2017-5715",
+            "VULNERABLE": true,
+            "INFOS": "IBRS+IBPB or retpoline+IBPB is needed to mitigate the vulnerability"
+        },
+        {
+            "NAME": "MELTDOWN",
+            "CVE": "CVE-2017-5754",
+            "VULNERABLE": false,
+            "INFOS": "your CPU vendor reported your CPU model as not affected"
+        },
+        {
+            "NAME": "VARIANT 3A",
+            "CVE": "CVE-2018-3640",
+            "VULNERABLE": false,
+            "INFOS": "your CPU vendor reported your CPU model as not affected"
+        },
+        {
+            "NAME": "VARIANT 4",
+            "CVE": "CVE-2018-3639",
+            "VULNERABLE": true,
+            "INFOS": "Your CPU doesn't support SSBD"
+        },
+        {
+            "NAME": "L1TF SGX",
+            "CVE": "CVE-2018-3615",
+            "VULNERABLE": false,
+            "INFOS": "your CPU vendor reported your CPU model as not affected"
+        },
+        {
+            "NAME": "L1TF OS",
+            "CVE": "CVE-2018-3620",
+            "VULNERABLE": false,
+            "INFOS": "your CPU vendor reported your CPU model as not affected"
+        },
+        {
+            "NAME": "L1TF VMM",
+            "CVE": "CVE-2018-3646",
+            "VULNERABLE": false,
+            "INFOS": "your CPU vendor reported your CPU model as not affected"
+        },
+        {
+            "NAME": "MSBDS",
+            "CVE": "CVE-2018-12126",
+            "VULNERABLE": false,
+            "INFOS": "your CPU vendor reported your CPU model as not affected"
+        },
+        {
+            "NAME": "MFBDS",
+            "CVE": "CVE-2018-12130",
+            "VULNERABLE": false,
+            "INFOS": "your CPU vendor reported your CPU model as not affected"
+        },
+        {
+            "NAME": "MLPDS",
+            "CVE": "CVE-2018-12127",
+            "VULNERABLE": false,
+            "INFOS": "your CPU vendor reported your CPU model as not affected"
+        },
+        {
+            "NAME": "MDSUM",
+            "CVE": "CVE-2019-11091",
+            "VULNERABLE": false,
+            "INFOS": "your CPU vendor reported your CPU model as not affected"
+        },
+        {
+            "NAME": "TAA",
+            "CVE": "CVE-2019-11135",
+            "VULNERABLE": false,
+            "INFOS": "your CPU vendor reported your CPU model as not affected"
+        },
+        {
+            "NAME": "ITLBMH",
+            "CVE": "CVE-2018-12207",
+            "VULNERABLE": false,
+            "INFOS": "your CPU vendor reported your CPU model as not affected"
+        },
+        {
+            "NAME": "SRBDS",
+            "CVE": "CVE-2020-0543",
+            "VULNERABLE": false,
+            "INFOS": "your CPU vendor reported your CPU model as not affected"
+        },
+        {
+            "NAME": "ZENBLEED",
+            "CVE": "CVE-2023-20593",
+            "VULNERABLE": false,
+            "INFOS": "your CPU vendor reported your CPU model as not affected"
+        },
+        {
+            "NAME": "DOWNFALL",
+            "CVE": "CVE-2022-40982",
+            "VULNERABLE": false,
+            "INFOS": "your CPU vendor reported your CPU model as not affected"
+        },
+        {
+            "NAME": "INCEPTION",
+            "CVE": "CVE-2023-20569",
+            "VULNERABLE": false,
+            "INFOS": "Mitigation: safe RET, no microcode"
+        }
+    ],
+    "Attack Output": [
+        {
+            "Line": "Reading 40 bytes:"
+        },
+        {
+            "Line": "Reading at malicious_x = 0xffffffffffffdfc8... Success: 0x54='T' score=2    "
+        },
+        {
+            "Line": "Reading at malicious_x = 0xffffffffffffdfc9... Success: 0x68='h' score=2    "
+        },
+        {
+            "Line": "Reading at malicious_x = 0xffffffffffffdfca... Success: 0x65='e' score=2    "
+        },
+        {
+            "Line": "Reading at malicious_x = 0xffffffffffffdfcb... Success: 0x20=' ' score=2    "
+        },
+        {
+            "Line": "Reading at malicious_x = 0xffffffffffffdfcc... Success: 0x4D='M' score=2    "
+        },
+        {
+            "Line": "Reading at malicious_x = 0xffffffffffffdfcd... Success: 0x61='a' score=2    "
+        },
+        {
+            "Line": "Reading at malicious_x = 0xffffffffffffdfce... Success: 0x67='g' score=2    "
+        },
+        {
+            "Line": "Reading at malicious_x = 0xffffffffffffdfcf... Success: 0x69='i' score=2    "
+        },
+        {
+            "Line": "Reading at malicious_x = 0xffffffffffffdfd0... Success: 0x63='c' score=2    "
+        },
+        {
+            "Line": "Reading at malicious_x = 0xffffffffffffdfd1... Success: 0x20=' ' score=2    "
+        },
+        {
+            "Line": "Reading at malicious_x = 0xffffffffffffdfd2... Success: 0x57='W' score=2    "
+        },
+        {
+            "Line": "Reading at malicious_x = 0xffffffffffffdfd3... Success: 0x6F='o' score=2    "
+        },
+        {
+            "Line": "Reading at malicious_x = 0xffffffffffffdfd4... Success: 0x72='r' score=2    "
+        },
+        {
+            "Line": "Reading at malicious_x = 0xffffffffffffdfd5... Success: 0x64='d' score=2    "
+        },
+        {
+            "Line": "Reading at malicious_x = 0xffffffffffffdfd6... Success: 0x73='s' score=2    "
+        },
+        {
+            "Line": "Reading at malicious_x = 0xffffffffffffdfd7... Success: 0x20=' ' score=2    "
+        },
+        {
+            "Line": "Reading at malicious_x = 0xffffffffffffdfd8... Success: 0x61='a' score=2    "
+        },
+        {
+            "Line": "Reading at malicious_x = 0xffffffffffffdfd9... Success: 0x72='r' score=2    "
+        },
+        {
+            "Line": "Reading at malicious_x = 0xffffffffffffdfda... Success: 0x65='e' score=2    "
+        },
+        {
+            "Line": "Reading at malicious_x = 0xffffffffffffdfdb... Success: 0x20=' ' score=2    "
+        },
+        {
+            "Line": "Reading at malicious_x = 0xffffffffffffdfdc... Success: 0x53='S' score=2    "
+        },
+        {
+            "Line": "Reading at malicious_x = 0xffffffffffffdfdd... Success: 0x71='q' score=2    "
+        },
+        {
+            "Line": "Reading at malicious_x = 0xffffffffffffdfde... Success: 0x75='u' score=2    "
+        },
+        {
+            "Line": "Reading at malicious_x = 0xffffffffffffdfdf... Success: 0x65='e' score=2    "
+        },
+        {
+            "Line": "Reading at malicious_x = 0xffffffffffffdfe0... Success: 0x61='a' score=2    "
+        },
+        {
+            "Line": "Reading at malicious_x = 0xffffffffffffdfe1... Success: 0x6D='m' score=7    (second best: 0x01 score=1)"
+        },
+        {
+            "Line": "Reading at malicious_x = 0xffffffffffffdfe2... Success: 0x69='i' score=2    "
+        },
+        {
+            "Line": "Reading at malicious_x = 0xffffffffffffdfe3... Success: 0x73='s' score=2    "
+        },
+        {
+            "Line": "Reading at malicious_x = 0xffffffffffffdfe4... Success: 0x68='h' score=2    "
+        },
+        {
+            "Line": "Reading at malicious_x = 0xffffffffffffdfe5... Success: 0x20=' ' score=2    "
+        },
+        {
+            "Line": "Reading at malicious_x = 0xffffffffffffdfe6... Success: 0x4F='O' score=9    (second best: 0x4D score=2)"
+        },
+        {
+            "Line": "Reading at malicious_x = 0xffffffffffffdfe7... Success: 0x73='s' score=2    "
+        },
+        {
+            "Line": "Reading at malicious_x = 0xffffffffffffdfe8... Success: 0x73='s' score=2    "
+        },
+        {
+            "Line": "Reading at malicious_x = 0xffffffffffffdfe9... Success: 0x69='i' score=2    "
+        },
+        {
+            "Line": "Reading at malicious_x = 0xffffffffffffdfea... Success: 0x66='f' score=2    "
+        },
+        {
+            "Line": "Reading at malicious_x = 0xffffffffffffdfeb... Success: 0x72='r' score=2    "
+        },
+        {
+            "Line": "Reading at malicious_x = 0xffffffffffffdfec... Success: 0x61='a' score=2    "
+        },
+        {
+            "Line": "Reading at malicious_x = 0xffffffffffffdfed... Success: 0x67='g' score=2    "
+        },
+        {
+            "Line": "Reading at malicious_x = 0xffffffffffffdfee... Success: 0x65='e' score=2    "
+        },
+        {
+            "Line": "Reading at malicious_x = 0xffffffffffffdfef... Success: 0x2E='.' score=2    "
+        },
+        {
+            "Line": ""
+        }
+    ]
+}

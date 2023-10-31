@@ -1,0 +1,2 @@
+[console_scripts]
+vuln_tracker = Vuln_tracker.Vuln_tracker:main
