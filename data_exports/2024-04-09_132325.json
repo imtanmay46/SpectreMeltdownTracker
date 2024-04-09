@@ -1,0 +1,303 @@
+{
+    "System Information": {
+        "OS": "Linux",
+        "OS Version": "#26~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Tue Mar 12 10:22:43 UTC 2",
+        "OS Release": "6.5.0-26-generic",
+        "Architecture": [
+            "64bit",
+            "ELF"
+        ],
+        "Machine": "x86_64",
+        "Processor": "x86_64",
+        "Python Version": "3.10.12",
+        "GCC Version": "gcc (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0",
+        "LD Version": "GNU ld (GNU Binutils for Ubuntu) 2.38",
+        "Timestamp": "2024-04-09 13:23:25",
+        "CPU Information": {
+            "Architecture": "x86_64",
+            "CPU op-mode(s)": "32-bit, 64-bit",
+            "Address sizes": "39 bits physical, 48 bits virtual",
+            "Byte Order": "Little Endian",
+            "CPU(s)": "2",
+            "On-line CPU(s) list": "0,1",
+            "Vendor ID": "GenuineIntel",
+            "Model name": "Intel(R) Pentium(R) CPU G3240 @ 3.10GHz",
+            "CPU family": "6",
+            "Model": "60",
+            "Thread(s) per core": "1",
+            "Core(s) per socket": "2",
+            "Socket(s)": "1",
+            "Stepping": "3",
+            "CPU max MHz": "3100.0000",
+            "CPU min MHz": "800.0000",
+            "BogoMIPS": "6185.85",
+            "Flags": "fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 sdbg cx16 xtpr pdcm pcid sse4_1 sse4_2 movbe popcnt tsc_deadline_timer xsave rdrand lahf_lm abm cpuid_fault invpcid_single pti ssbd ibrs ibpb stibp tpr_shadow flexpriority ept vpid ept_ad fsgsbase tsc_adjust erms invpcid xsaveopt dtherm arat pln pts vnmi md_clear flush_l1d",
+            "Virtualization": "VT-x",
+            "L1d cache": "64 KiB (2 instances)",
+            "L1i cache": "64 KiB (2 instances)",
+            "L2 cache": "512 KiB (2 instances)",
+            "L3 cache": "3 MiB (1 instance)",
+            "NUMA node(s)": "1",
+            "NUMA node0 CPU(s)": "0,1",
+            "Vulnerability Gather data sampling": "Not affected",
+            "Vulnerability Itlb multihit": "KVM: Mitigation: VMX disabled",
+            "Vulnerability L1tf": "Mitigation; PTE Inversion; VMX conditional cache flushes, SMT disabled",
+            "Vulnerability Mds": "Mitigation; Clear CPU buffers; SMT disabled",
+            "Vulnerability Meltdown": "Mitigation; PTI",
+            "Vulnerability Mmio stale data": "Unknown: No mitigations",
+            "Vulnerability Retbleed": "Not affected",
+            "Vulnerability Spec rstack overflow": "Not affected",
+            "Vulnerability Spec store bypass": "Mitigation; Speculative Store Bypass disabled via prctl",
+            "Vulnerability Spectre v1": "Mitigation; usercopy/swapgs barriers and __user pointer sanitization",
+            "Vulnerability Spectre v2": "Mitigation; Retpolines, IBPB conditional, IBRS_FW, STIBP disabled, RSB filling, PBRSB-eIBRS Not affected",
+            "Vulnerability Srbds": "Mitigation; Microcode",
+            "Vulnerability Tsx async abort": "Not affected"
+        },
+        "Memory Information": {
+            "total": "Mem:",
+            "used": "7.6Gi",
+            "free": "1.4Gi",
+            "shared": "2.1Gi",
+            "buff/cache": "328Mi",
+            "available": "4.1Gi"
+        }
+    },
+    "Manufacturer Vulnerabilities Data": [
+        {
+            "NAME": "SPECTRE VARIANT 1",
+            "CVE": "CVE-2017-5753",
+            "VULNERABLE": false,
+            "INFOS": "Mitigation: usercopy/swapgs barriers and __user pointer sanitization"
+        },
+        {
+            "NAME": "SPECTRE VARIANT 2",
+            "CVE": "CVE-2017-5715",
+            "VULNERABLE": false,
+            "INFOS": "Full retpoline + IBPB are mitigating the vulnerability"
+        },
+        {
+            "NAME": "MELTDOWN",
+            "CVE": "CVE-2017-5754",
+            "VULNERABLE": false,
+            "INFOS": "Mitigation: PTI"
+        },
+        {
+            "NAME": "VARIANT 3A",
+            "CVE": "CVE-2018-3640",
+            "VULNERABLE": true,
+            "INFOS": "an up-to-date CPU microcode is needed to mitigate this vulnerability"
+        },
+        {
+            "NAME": "VARIANT 4",
+            "CVE": "CVE-2018-3639",
+            "VULNERABLE": false,
+            "INFOS": "Mitigation: Speculative Store Bypass disabled via prctl"
+        },
+        {
+            "NAME": "L1TF SGX",
+            "CVE": "CVE-2018-3615",
+            "VULNERABLE": true,
+            "INFOS": "your CPU supports SGX and the microcode is not up to date"
+        },
+        {
+            "NAME": "L1TF OS",
+            "CVE": "CVE-2018-3620",
+            "VULNERABLE": false,
+            "INFOS": "Mitigation: PTE Inversion; VMX: conditional cache flushes, SMT disabled"
+        },
+        {
+            "NAME": "L1TF VMM",
+            "CVE": "CVE-2018-3646",
+            "VULNERABLE": false,
+            "INFOS": "this system is not running a hypervisor"
+        },
+        {
+            "NAME": "MSBDS",
+            "CVE": "CVE-2018-12126",
+            "VULNERABLE": false,
+            "INFOS": "Mitigation: Clear CPU buffers"
+        },
+        {
+            "NAME": "MFBDS",
+            "CVE": "CVE-2018-12130",
+            "VULNERABLE": false,
+            "INFOS": "Mitigation: Clear CPU buffers"
+        },
+        {
+            "NAME": "MLPDS",
+            "CVE": "CVE-2018-12127",
+            "VULNERABLE": false,
+            "INFOS": "Mitigation: Clear CPU buffers"
+        },
+        {
+            "NAME": "MDSUM",
+            "CVE": "CVE-2019-11091",
+            "VULNERABLE": false,
+            "INFOS": "Mitigation: Clear CPU buffers"
+        },
+        {
+            "NAME": "TAA",
+            "CVE": "CVE-2019-11135",
+            "VULNERABLE": false,
+            "INFOS": "your CPU vendor reported your CPU model as not affected"
+        },
+        {
+            "NAME": "ITLBMH",
+            "CVE": "CVE-2018-12207",
+            "VULNERABLE": false,
+            "INFOS": "this system is not running a hypervisor"
+        },
+        {
+            "NAME": "SRBDS",
+            "CVE": "CVE-2020-0543",
+            "VULNERABLE": true,
+            "INFOS": "Your CPU microcode may need to be updated to mitigate the vulnerability"
+        },
+        {
+            "NAME": "ZENBLEED",
+            "CVE": "CVE-2023-20593",
+            "VULNERABLE": false,
+            "INFOS": "your CPU vendor reported your CPU model as not affected"
+        },
+        {
+            "NAME": "DOWNFALL",
+            "CVE": "CVE-2022-40982",
+            "VULNERABLE": false,
+            "INFOS": "your CPU vendor reported your CPU model as not affected"
+        },
+        {
+            "NAME": "INCEPTION",
+            "CVE": "CVE-2023-20569",
+            "VULNERABLE": false,
+            "INFOS": "your CPU vendor reported your CPU model as not affected"
+        }
+    ],
+    "Attack Output": [
+        {
+            "Line": "Reading 40 bytes:"
+        },
+        {
+            "Line": "Reading at malicious_x = 0xffffffffffffdfc8... Success: 0x54='T' score=13    (second best: 0x01 score=4)"
+        },
+        {
+            "Line": "Reading at malicious_x = 0xffffffffffffdfc9... Success: 0x68='h' score=11    (second best: 0x01 score=3)"
+        },
+        {
+            "Line": "Reading at malicious_x = 0xffffffffffffdfca... Success: 0x65='e' score=11    (second best: 0x01 score=3)"
+        },
+        {
+            "Line": "Reading at malicious_x = 0xffffffffffffdfcb... Success: 0x20=' ' score=11    (second best: 0x01 score=3)"
+        },
+        {
+            "Line": "Reading at malicious_x = 0xffffffffffffdfcc... Success: 0x4D='M' score=11    (second best: 0x01 score=3)"
+        },
+        {
+            "Line": "Reading at malicious_x = 0xffffffffffffdfcd... Success: 0x61='a' score=11    (second best: 0x01 score=3)"
+        },
+        {
+            "Line": "Reading at malicious_x = 0xffffffffffffdfce... Success: 0x67='g' score=11    (second best: 0x01 score=3)"
+        },
+        {
+            "Line": "Reading at malicious_x = 0xffffffffffffdfcf... Success: 0x69='i' score=11    (second best: 0x01 score=3)"
+        },
+        {
+            "Line": "Reading at malicious_x = 0xffffffffffffdfd0... Success: 0x63='c' score=11    (second best: 0x01 score=3)"
+        },
+        {
+            "Line": "Reading at malicious_x = 0xffffffffffffdfd1... Success: 0x20=' ' score=11    (second best: 0x01 score=3)"
+        },
+        {
+            "Line": "Reading at malicious_x = 0xffffffffffffdfd2... Success: 0x57='W' score=11    (second best: 0x01 score=3)"
+        },
+        {
+            "Line": "Reading at malicious_x = 0xffffffffffffdfd3... Success: 0x6F='o' score=11    (second best: 0x01 score=3)"
+        },
+        {
+            "Line": "Reading at malicious_x = 0xffffffffffffdfd4... Success: 0x72='r' score=11    (second best: 0x01 score=3)"
+        },
+        {
+            "Line": "Reading at malicious_x = 0xffffffffffffdfd5... Success: 0x64='d' score=11    (second best: 0x01 score=3)"
+        },
+        {
+            "Line": "Reading at malicious_x = 0xffffffffffffdfd6... Success: 0x73='s' score=11    (second best: 0x01 score=3)"
+        },
+        {
+            "Line": "Reading at malicious_x = 0xffffffffffffdfd7... Success: 0x20=' ' score=11    (second best: 0x01 score=3)"
+        },
+        {
+            "Line": "Reading at malicious_x = 0xffffffffffffdfd8... Success: 0x61='a' score=11    (second best: 0x01 score=3)"
+        },
+        {
+            "Line": "Reading at malicious_x = 0xffffffffffffdfd9... Success: 0x72='r' score=11    (second best: 0x01 score=3)"
+        },
+        {
+            "Line": "Reading at malicious_x = 0xffffffffffffdfda... Success: 0x65='e' score=11    (second best: 0x01 score=3)"
+        },
+        {
+            "Line": "Reading at malicious_x = 0xffffffffffffdfdb... Success: 0x20=' ' score=11    (second best: 0x01 score=3)"
+        },
+        {
+            "Line": "Reading at malicious_x = 0xffffffffffffdfdc... Success: 0x53='S' score=11    (second best: 0x01 score=3)"
+        },
+        {
+            "Line": "Reading at malicious_x = 0xffffffffffffdfdd... Success: 0x71='q' score=11    (second best: 0x01 score=3)"
+        },
+        {
+            "Line": "Reading at malicious_x = 0xffffffffffffdfde... Success: 0x75='u' score=11    (second best: 0x01 score=3)"
+        },
+        {
+            "Line": "Reading at malicious_x = 0xffffffffffffdfdf... Success: 0x65='e' score=11    (second best: 0x01 score=3)"
+        },
+        {
+            "Line": "Reading at malicious_x = 0xffffffffffffdfe0... Success: 0x61='a' score=11    (second best: 0x01 score=3)"
+        },
+        {
+            "Line": "Reading at malicious_x = 0xffffffffffffdfe1... Success: 0x6D='m' score=11    (second best: 0x01 score=3)"
+        },
+        {
+            "Line": "Reading at malicious_x = 0xffffffffffffdfe2... Success: 0x69='i' score=11    (second best: 0x01 score=3)"
+        },
+        {
+            "Line": "Reading at malicious_x = 0xffffffffffffdfe3... Success: 0x73='s' score=11    (second best: 0x01 score=3)"
+        },
+        {
+            "Line": "Reading at malicious_x = 0xffffffffffffdfe4... Success: 0x68='h' score=11    (second best: 0x01 score=3)"
+        },
+        {
+            "Line": "Reading at malicious_x = 0xffffffffffffdfe5... Success: 0x20=' ' score=2    "
+        },
+        {
+            "Line": "Reading at malicious_x = 0xffffffffffffdfe6... Success: 0x4F='O' score=11    (second best: 0x01 score=3)"
+        },
+        {
+            "Line": "Reading at malicious_x = 0xffffffffffffdfe7... Success: 0x73='s' score=13    (second best: 0x01 score=4)"
+        },
+        {
+            "Line": "Reading at malicious_x = 0xffffffffffffdfe8... Success: 0x73='s' score=11    (second best: 0x01 score=3)"
+        },
+        {
+            "Line": "Reading at malicious_x = 0xffffffffffffdfe9... Success: 0x69='i' score=11    (second best: 0x01 score=3)"
+        },
+        {
+            "Line": "Reading at malicious_x = 0xffffffffffffdfea... Success: 0x66='f' score=11    (second best: 0x01 score=3)"
+        },
+        {
+            "Line": "Reading at malicious_x = 0xffffffffffffdfeb... Success: 0x72='r' score=11    (second best: 0x01 score=3)"
+        },
+        {
+            "Line": "Reading at malicious_x = 0xffffffffffffdfec... Success: 0x61='a' score=11    (second best: 0x01 score=3)"
+        },
+        {
+            "Line": "Reading at malicious_x = 0xffffffffffffdfed... Success: 0x67='g' score=11    (second best: 0x01 score=3)"
+        },
+        {
+            "Line": "Reading at malicious_x = 0xffffffffffffdfee... Success: 0x65='e' score=11    (second best: 0x01 score=3)"
+        },
+        {
+            "Line": "Reading at malicious_x = 0xffffffffffffdfef... Success: 0x2E='.' score=11    (second best: 0x01 score=3)"
+        },
+        {
+            "Line": ""
+        }
+    ]
+}
