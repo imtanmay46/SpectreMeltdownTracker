@@ -1,0 +1,148 @@
+{
+    "System Information": {
+        "OS": "Darwin",
+        "OS Version": "Darwin Kernel Version 21.6.0: Sun Dec 17 22:55:27 PST 2023; root:xnu-8020.240.18.706.2~1/RELEASE_X86_64",
+        "OS Release": "21.6.0",
+        "Architecture": [
+            "64bit",
+            ""
+        ],
+        "Machine": "x86_64",
+        "Processor": "i386",
+        "Python Version": "3.9.6",
+        "GCC Version": "Apple clang version 14.0.0 (clang-1400.0.29.202)",
+        "LD Version": "ld: unknown option: --version",
+        "Timestamp": "2024-04-15 22:11:56",
+        "CPU Information": {},
+        "Memory Information": {}
+    },
+    "Manufacturer Vulnerabilities Data": null,
+    "Attack Output": [
+        {
+            "Line": "Reading 40 bytes:"
+        },
+        {
+            "Line": "Reading at malicious_x = 0xffffffffffffbeba... Success: 0x02='?' score=25    (second best: 0x01 score=10)"
+        },
+        {
+            "Line": "Reading at malicious_x = 0xffffffffffffbebb... Success: 0x02='?' score=15    (second best: 0x01 score=5)"
+        },
+        {
+            "Line": "Reading at malicious_x = 0xffffffffffffbebc... Success: 0x02='?' score=27    (second best: 0x01 score=11)"
+        },
+        {
+            "Line": "Reading at malicious_x = 0xffffffffffffbebd... Success: 0x02='?' score=25    (second best: 0x01 score=10)"
+        },
+        {
+            "Line": "Reading at malicious_x = 0xffffffffffffbebe... Success: 0x02='?' score=15    (second best: 0x01 score=5)"
+        },
+        {
+            "Line": "Reading at malicious_x = 0xffffffffffffbebf... Success: 0x02='?' score=15    (second best: 0x01 score=5)"
+        },
+        {
+            "Line": "Reading at malicious_x = 0xffffffffffffbec0... Success: 0x02='?' score=15    (second best: 0x01 score=5)"
+        },
+        {
+            "Line": "Reading at malicious_x = 0xffffffffffffbec1... Success: 0x02='?' score=15    (second best: 0x01 score=5)"
+        },
+        {
+            "Line": "Reading at malicious_x = 0xffffffffffffbec2... Success: 0x02='?' score=15    (second best: 0x01 score=5)"
+        },
+        {
+            "Line": "Reading at malicious_x = 0xffffffffffffbec3... Success: 0x02='?' score=15    (second best: 0x01 score=5)"
+        },
+        {
+            "Line": "Reading at malicious_x = 0xffffffffffffbec4... Success: 0x02='?' score=15    (second best: 0x01 score=5)"
+        },
+        {
+            "Line": "Reading at malicious_x = 0xffffffffffffbec5... Success: 0x02='?' score=15    (second best: 0x01 score=5)"
+        },
+        {
+            "Line": "Reading at malicious_x = 0xffffffffffffbec6... Success: 0x02='?' score=15    (second best: 0x01 score=5)"
+        },
+        {
+            "Line": "Reading at malicious_x = 0xffffffffffffbec7... Success: 0x02='?' score=15    (second best: 0x01 score=5)"
+        },
+        {
+            "Line": "Reading at malicious_x = 0xffffffffffffbec8... Success: 0x02='?' score=15    (second best: 0x01 score=5)"
+        },
+        {
+            "Line": "Reading at malicious_x = 0xffffffffffffbec9... Unclear: 0x20=' ' score=997    (second best: 0x02 score=934)"
+        },
+        {
+            "Line": "Reading at malicious_x = 0xffffffffffffbeca... Success: 0x61='a' score=345    (second best: 0x02 score=170)"
+        },
+        {
+            "Line": "Reading at malicious_x = 0xffffffffffffbecb... Unclear: 0x72='r' score=999    (second best: 0x02 score=931)"
+        },
+        {
+            "Line": "Reading at malicious_x = 0xffffffffffffbecc... Unclear: 0x65='e' score=999    (second best: 0x02 score=933)"
+        },
+        {
+            "Line": "Reading at malicious_x = 0xffffffffffffbecd... Unclear: 0x20=' ' score=917    (second best: 0x02 score=837)"
+        },
+        {
+            "Line": "Reading at malicious_x = 0xffffffffffffbece... Success: 0x02='?' score=15    (second best: 0x01 score=5)"
+        },
+        {
+            "Line": "Reading at malicious_x = 0xffffffffffffbecf... Success: 0x02='?' score=15    (second best: 0x01 score=5)"
+        },
+        {
+            "Line": "Reading at malicious_x = 0xffffffffffffbed0... Success: 0x02='?' score=15    (second best: 0x01 score=5)"
+        },
+        {
+            "Line": "Reading at malicious_x = 0xffffffffffffbed1... Success: 0x02='?' score=15    (second best: 0x01 score=5)"
+        },
+        {
+            "Line": "Reading at malicious_x = 0xffffffffffffbed2... Success: 0x02='?' score=15    (second best: 0x01 score=5)"
+        },
+        {
+            "Line": "Reading at malicious_x = 0xffffffffffffbed3... Success: 0x02='?' score=15    (second best: 0x01 score=5)"
+        },
+        {
+            "Line": "Reading at malicious_x = 0xffffffffffffbed4... Success: 0x02='?' score=15    (second best: 0x01 score=5)"
+        },
+        {
+            "Line": "Reading at malicious_x = 0xffffffffffffbed5... Success: 0x02='?' score=15    (second best: 0x01 score=5)"
+        },
+        {
+            "Line": "Reading at malicious_x = 0xffffffffffffbed6... Success: 0x02='?' score=15    (second best: 0x01 score=5)"
+        },
+        {
+            "Line": "Reading at malicious_x = 0xffffffffffffbed7... Success: 0x02='?' score=15    (second best: 0x01 score=5)"
+        },
+        {
+            "Line": "Reading at malicious_x = 0xffffffffffffbed8... Success: 0x02='?' score=15    (second best: 0x4F score=5)"
+        },
+        {
+            "Line": "Reading at malicious_x = 0xffffffffffffbed9... Success: 0x02='?' score=15    (second best: 0x01 score=5)"
+        },
+        {
+            "Line": "Reading at malicious_x = 0xffffffffffffbeda... Success: 0x02='?' score=15    (second best: 0x01 score=5)"
+        },
+        {
+            "Line": "Reading at malicious_x = 0xffffffffffffbedb... Success: 0x02='?' score=15    (second best: 0x01 score=5)"
+        },
+        {
+            "Line": "Reading at malicious_x = 0xffffffffffffbedc... Success: 0x02='?' score=15    (second best: 0x01 score=5)"
+        },
+        {
+            "Line": "Reading at malicious_x = 0xffffffffffffbedd... Success: 0x02='?' score=15    (second best: 0x01 score=5)"
+        },
+        {
+            "Line": "Reading at malicious_x = 0xffffffffffffbede... Success: 0x02='?' score=15    (second best: 0x01 score=5)"
+        },
+        {
+            "Line": "Reading at malicious_x = 0xffffffffffffbedf... Success: 0x02='?' score=15    (second best: 0x01 score=5)"
+        },
+        {
+            "Line": "Reading at malicious_x = 0xffffffffffffbee0... Success: 0x02='?' score=15    (second best: 0x01 score=5)"
+        },
+        {
+            "Line": "Reading at malicious_x = 0xffffffffffffbee1... Success: 0x02='?' score=15    (second best: 0x01 score=5)"
+        },
+        {
+            "Line": ""
+        }
+    ]
+}
